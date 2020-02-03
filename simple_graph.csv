@@ -1,0 +1,6 @@
+Node1,Link1,Weight1,Link2,Weight2
+Reza Saneei,B,10,C,11
+B,Reza Saneei,12,C,14
+C,B,15,Reza Saneei,17
+D,Reza Saneei,34,E,44
+E,B,22,D,33
