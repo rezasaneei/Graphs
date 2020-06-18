@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<title>Simple Graph</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style type="text/css">
+    html, body {
+            font: 12pt arial;
+        }
+        #viz {
+            width: 900px;
+            height: 700px;
+            border: 1px solid gray;
+            font: 22pt arial;
+            float: top;
+        }
+
+</style>
+<body>
+
+<!-- Sidebar -->
+<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+  <h3 class="w3-bar-item"></h3>
+  
+  <a href="#" class="w3-bar-item w3-button" style="margin-bottom:30px">
+  		<button type="button" id="btnAddAll">Add All Nodes</button>
+        <button type="button" id="btnShowAll">Show All Nodes</button>
+        <button type="button" id="btnDeleteAll">Delete All Nodes</button>
+  </a>
+        
+        
+  <a href="#" class="w3-bar-item w3-button" style="margin-bottom:30px">
+  		<label>Node name:</label>
+        <input type="text" id="txtNodeName"><br><br>
+        <label>Node Class:</label>
+        <input type="text" id="txtNodeClass"><br><br>
+        <label>Node Size:</label>
+        <input type="text" id="txtNodeSize"><br><br>
+        <button type="button" id="btnAddOne">Add a Node</button>
+   </a>
+     
+        
+  <a href="#" class="w3-bar-item w3-button" style="margin-bottom:30px">
+  		<label>Node Source:</label>
+        <input type="text" id="txtSourceName"><br><br>
+        <label>Node Target:</label>
+        <input type="text" id="txtTargetName"><br><br>
+        <label>Link Weight:</label>
+        <input type="text" id="txtEdgeWeight"><br><br>
+        <button type="button" id="btnAddEdge">Add an Edge</button>
+   </a>
+        
+        
+  <a href="#" class="w3-bar-item w3-button" style="margin-bottom:30px">
+  			<label>Node name:</label>
+            <input type="text" id="txtNodeName2"><br><br>
+            <button type="button" id="btnDeleteOne">Delete a Node</button>
+  </a>
+            
+
+  <a href="#" class="w3-bar-item w3-button" style="margin-bottom:30px">
+    <label>Node Source:</label>
+      <input type="text" id="txtSourceName1"><br><br>
+      <label>Node Target:</label>
+      <input type="text" id="txtTargetName1"><br><br>
+      <button type="button" id="btnCalcShortestPath">Shortest Path</button>
+ </a>
+            
+            
+</div>
+
+<!-- Page Content -->
+<div style="margin-left:25%">
+
+<div class="w3-container w3-teal">
+  <h1>Simple Graph</h1>
+</div>
+
+<div class="w3-container" div id="viz"></div>
+
+Cypher query: <textarea rows="4" cols=50 id="cypher"></textarea><br>
+<input type="submit" value="Submit" id="reload">
+<input type="submit" value="Stabilize" id="stabilize">
+
+</div>
+
+<div>
+
+
+</div>>
+
+</body>
+
+<script src="C:/Users/rezas/node_modules/neovis.js/dist/neovis.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/neo4j-driver"></script>
+<script type="text/javascript" src="test.js"></script>
+
+</html>
